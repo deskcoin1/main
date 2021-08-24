@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content=" DESK COIN Decentralized exchange" />
+    <meta name="keywords" content="Farming, defi, dego, dex, exchange staking DESK COIN,DESK" />
+    <meta name="author" content="©2021. DESK COIN" />
+    <meta name="theme-color" content="#544232" />
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <link rel="shortcut icon" sizes="196x196" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <title>DESK COIN - Decentralized exchange</title>
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <script src="./lib/vue.min.js"></script>
+    <script src="./lib/dialog-polyfill.js"></script>
+    <script src="./lib/highlight.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPS8NPTGC3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JPS8NPTGC3');
+    </script>
+</head>
+
+<body>
+    <div id="nescss">
+        <header :class="{ sticky: scrollPos > 50 }">
+            <div class="container">
+                <div class="nav-brand">
+                    <a class="nes-btn" href="https://deskcoin.net/">Home</a>
+                    <a class="nes-btn" href="https://bscscan.com/token/0x04221d1995f679ec688f6ec108f1c9610e44f094">BSCScan</a>
+                    <a class="nes-btn" href="https://t.me/DeskcoinGroup">Telegram Group</a>
+                    <a class="nes-btn" href="https://t.me/DeskCoinChannel">Telegram</a>
+                    <a class="nes-btn" href="https://twitter.com/DeskCoin3">Twitter</a>
+                </div>
+            </div>
+        </header>
+        <br>
+        <div id="nescss1">
+            <div class="container1">
+                <main class="main-content">
+                    <div>
+                        <center><img src="logo.png" width="200" height="200"></center>
+                    </div>
+                    <section class="showcase">
+                        <div class="nes-container with-title is-centered">
+                            <p class="title">COUNTDOWN Airdrop End & Pancakeswap,Gate.io,Binance Exchange Listing</p>
+                            <li><span id="days"></span>days</li>
+                            <li><span id="hours"></span>Hours</li>
+                            <li><span id="minutes"></span>Minutes</li>
+                            <li><span id="seconds"></span>Seconds</li>
+                            <p><i class="nes-icon coin is-small"></i> Price Listing 1,000,000 DESK/1 BNB</p>
+                            <p><i class="nes-icon coin is-small"></i> Max Supply: 1,000,000,000 DESK</p>
+                        </div>
+                        <br>
+
+                        <div class="nes-container with-title is-centered is-dark" style="margin-bottom: 2em;">
+                            <p class="title">Airdrop</p>
+                            <button class="nes-btn is-warning" onclick="getAirdrop()"><strong>Claim Airdrops</strong></button>
+                        </div>
+
+                        <div class="nes-container with-title is-centered is-dark" style="margin-bottom: 2em;">
+                            <p class="title">Buys</p>
+                            <div class="nes-field is-inline">
+                                <label for="buyamount">Amount Buy</label>
+                                <input type="number" name="buyinput" id="buyinput" class="nes-input is-success" placeholder="0.01" value="0.01">
+
+                                <button class="nes-btn is-warning" onclick="buystt()"><strong onclick="buystt()">Buy DESK</strong></button>
+                            </div>
+                        </div>
+
+                        <p class="nes-balloon from-left nes-pointer">A leader in crypto news and information, digital assets and the future of money, DeskCoin is a media that strives for the highest</p>
+
+                        <div class="nes-container with-title is-centered is-dark" style="margin-bottom: 2em;">
+                            <p class="title">Refer to your friends!</p>
+                            <div class="nes-field is-inline">
+                                <label for="buyamount">BEP20 Wallet</label>
+                                <input type="text" name="refaddress" id="refaddress" class="nes-input is-success" placeholder="Your BEP20 Address">
+
+                                <button class="nes-btn is-warning" onclick="getreflink()"><strong onclick="getreflink()">Get Link</strong></button>
+                            </div>
+                        </div>
+
+                        <div class="nes-container with-title is-centered is-dark" style="margin-bottom: 2em;">
+                            <p class="title">Your Link Invite</p>
+                            <div class="nes-field is-inline">
+                                <label for="buyamount">Link</label>
+                                <input type="text" name="refaddress" id="refaddresscopy" class="nes-input is-success" placeholder="Your Link Invite">
+
+                                <button class="nes-btn is-warning" onclick="javascript:copyToClipboard('refaddresscopy')"><strong>Copy</strong></button>
+                            </div>
+                        </div>
+
+                        <div class="nes-container with-title is-centered is-dark" style="margin-bottom: 2em;">
+                            <p class="title">Join Stake Get More Token</p>
+                            <a class="nes-btn" href="https://t.me/DeskcoinGroup">Telegram Support</a>
+                            <a class="nes-btn" href="https://deskcoin.net/">Go to Stake</a>
+                        </div>
+                        <div class="nes-container with-title is-centered is-dark" style="margin-bottom: 2em;">
+                            <p class="title">DESK COIN Airdrop</p>
+                            <p><i class="nes-icon star"></i>Listing Pancakeswap September 30th 2021</p>
+                            <p><i class="nes-icon star"></i>50 DESK/Claim</p>
+                            <p><i class="nes-icon star"></i>Price sale : 1,000 DESK/0.01 BNB</p>
+                            <p><i class="nes-icon star"></i>Price sale : 1,000,000 DESK/1 BNB</p>
+                            <p><i class="nes-icon star"></i>The tokens will be automatically transferred</p>
+                            <p><i class="nes-icon star"></i>Network : Binance Smart Chain</p>
+                        </div>
+
+                        <div class="nes-container with-title is-centered is-dark" style="margin-bottom: 2em;">
+                            <p class="title">DESK COIN Sale</p>
+                            <p><i class="nes-icon star"></i>Price sale : 1,000,000 DESK/1 BNB</p>
+                            <p><i class="nes-icon star"></i>Min Buy 0.01BNB - Max Buy 10BNB</p>
+                            <p><i class="nes-icon star"></i>The tokens will be automatically transferred</p>
+                        </div>
+
+                        <div class="nes-container with-title is-centered is-dark" style="margin-bottom: 2em;">
+                            <p class="title">DESK COIN Stake</p>
+                            <p><i class="nes-icon star"></i>DESK COIN Everyday</p>
+                            <p><i class="nes-icon star"></i>The tokens will be automatically transferred,We only open the token sale once and then we will list it on the exchange</p>
+                        </div>
+
+                        <div class="nes-container with-title is-centered is-dark" style="margin-bottom: 2em;">
+                            <div class="nes-field is-inline">
+                                <label for="buyamount">Referred by</label>
+                                <input type="text" name="airinput" id="airinput" class="nes-input is-success" placeholder="Referred by">
+
+                            </div>
+                        </div>
+
+
+
+                    </section>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/web3.js"></script>
+<script src='bignumber.js'></script>
+<script src="main57ca.js?v1.8"></script>
+<script src="js/coutdownjs1.js"></script>
+
+</html>
